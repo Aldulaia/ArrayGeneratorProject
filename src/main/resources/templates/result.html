@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+        body {
+            background-color: #303641;
+            font-family: "Raleway", sans-serif;
+            text-align: center;
+            padding-top: 15px;
+            color:white;
+        }
+        
+        pre {
+        	border: 2px red outset;
+        	margin-left:250px;
+        	margin-right:250px;
+        	border-radius: 10px;
+        	background-color: lightgrey;
+        	color: black;
+        }
+        
+    </style>
+</head>
+<body>
+<h1>View Matrix</h1>
+ <pre th:text="   ${matrix} " > </pre>
+ <p th:text=" 'V =' + ${vVal} "> </p>
+ <p th:text=" 'J = ' + ${jVal} "> </p>
+ <p th:text=" 'I = ' + ${iVal} "> </p>
+</body>
+</html>
